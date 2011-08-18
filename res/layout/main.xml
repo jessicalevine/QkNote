@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	     android:layout_height="wrap_content">
+		<EditText  
+			android:id="@+id/title"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:lines="1"
+		    android:text="Title"
+		    />
+		<Button android:id="@+id/saveButton"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="Manual Save" />
+	</LinearLayout>
+	<EditText  
+		android:id="@+id/note"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:gravity="top"
+	    android:text="Note"
+	    />
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	     android:layout_height="wrap_content">
+	    <TextView android:id="@+id/controlLabel"
+	    	android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:paddingRight="1dp"
+	    	android:text="Note Controls:"/>
+    	<Button android:id="@+id/newButton"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="New" />
+			<Button android:id="@+id/delButton"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="Delete" />
+		<TextView android:id="@+id/menuLabel"
+	    	android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:paddingLeft="5dp"
+			android:paddingRight="2dp"
+	    	android:text="Load:"/>	
+		<Spinner android:id="@+id/menu"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent" />
+			
+	</LinearLayout>
+</LinearLayout>
